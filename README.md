@@ -1,0 +1,1 @@
+# GT Estratégia Digital
