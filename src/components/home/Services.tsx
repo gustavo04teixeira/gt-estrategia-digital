@@ -85,7 +85,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section id="servicos" className="section bg-gray-50">
+    <section id="servicos" className="section bg-dark-700">
       <div className="container-custom">
         <motion.div 
           className="section-title"

@@ -26,7 +26,7 @@ const Header: React.FC = () => {
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <div className="text-primary-800 font-heading font-bold text-2xl">
-            <span className="text-primary-gtgreen">GT </span>
+            <span className="text-dark-gtgreen">GT </span>
             <span className="text-white">Estratégia Digital</span>
           </div>
         </Link>
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
           <NavLink to="/servicos" className={({ isActive }) => 
             `text-sm font-medium transition-colors ${isActive 
               ? 'text-green-900' 
-              : isScrolled ? 'text-white hover:text-primary-gtgreen' : 'text-white hover:text-primary-gtgreen'
+              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-white hover:text-dark-gtgreen'
             }`
           }>
             Serviços
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
           <NavLink to="/portfolio" className={({ isActive }) => 
             `text-sm font-medium transition-colors ${isActive 
               ? 'text-primary-600' 
-              : isScrolled ? 'text-white hover:text-primary-gtgreen' : 'text-gray-100 hover:text-primary-gtgreen'
+              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-gray-100 hover:text-dark-gtgreen'
             }`
           }>
             Portfólio
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           <NavLink to="/blog" className={({ isActive }) => 
             `text-sm font-medium transition-colors ${isActive 
               ? 'text-primary-600' 
-              : isScrolled ? 'text-white hover:text-primary-gtgreen' : 'text-gray-100 hover:text-primary-gtgreen'
+              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-gray-100 hover:text-dark-gtgreen'
             }`
           }>
             Blog
@@ -60,13 +60,13 @@ const Header: React.FC = () => {
           <NavLink to="/sobre" className={({ isActive }) => 
             `text-sm font-medium transition-colors ${isActive 
               ? 'text-primary-600' 
-              : isScrolled ? 'text-white hover:text-primary-gtgreen' : 'text-gray-100 hover:text-primary-gtgreen'
+              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-gray-100 hover:text-dark-gtgreen'
             }`
           }>
             Sobre
           </NavLink>
-          <Link to="/contato" className="btn-primary">
-            Fale Conosco <ArrowRight size={16} className="ml-2" />
+          <Link to="/contato" className="btn-primary bg-dark-gtgreen text-black">
+            Fale Conosco <ArrowRight size={16} className="ml-2 text-black" />
           </Link>
         </nav>
 

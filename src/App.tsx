@@ -25,7 +25,7 @@ const App: React.FC = () => {
       </Routes>
       
       <a 
-        href="https://wa.me/5548991398983?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20marketing%20digital." 
+        href="https://wa.me/5548991740063?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20marketing%20digital." 
         target="_blank" 
         rel="noopener noreferrer"
         className="whatsapp-button"

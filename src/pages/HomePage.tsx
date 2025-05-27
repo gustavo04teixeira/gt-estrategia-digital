@@ -9,7 +9,7 @@ import CTA from '../components/home/CTA';
 const HomePage: React.FC = () => {
   useEffect(() => {
     // Update document title
-    document.title = 'DigiMarketing - Soluções em Marketing Digital';
+    document.title = 'GT Estratégia';
     
     // Scroll to top on page load
     window.scrollTo(0, 0);

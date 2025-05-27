@@ -94,7 +94,7 @@ const ServicosPage: React.FC = () => {
       <section className="pt-32 pb-16 bg-gradient-to-r from-primary-900 to-primary-700 text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Nossos Serviços</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-dark-gtgreen">Nossos Serviços</h1>
             <p className="text-xl text-gray-100">
               Soluções completas em marketing digital para impulsionar seu negócio no ambiente online.
             </p>
