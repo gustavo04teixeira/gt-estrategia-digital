@@ -20,7 +20,7 @@ const Testimonials: React.FC = () => {
       position: "Gerente de Marketing",
       company: "Moda Express",
       image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      quote: "A DigiMarketing transformou completamente nossa estratégia digital. Em apenas 3 meses, aumentamos nossas vendas online em 200%. A equipe é extremamente profissional e está sempre disponível para resolver qualquer problema.",
+      quote: "A GT Marketing transformou completamente nossa estratégia digital. Em apenas 3 meses, aumentamos nossas vendas online em 200%. A equipe é extremamente profissional e está sempre disponível para resolver qualquer problema.",
       rating: 5
     },
     {
@@ -29,7 +29,7 @@ const Testimonials: React.FC = () => {
       position: "CEO",
       company: "Clínica Vitalle",
       image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      quote: "Desde que contratamos a DigiMarketing para cuidar do nosso SEO e marketing de conteúdo, o número de novos pacientes aumentou significativamente. Estamos muito satisfeitos com os resultados e a transparência no trabalho.",
+      quote: "Desde que contratamos a GT Marketing para cuidar do nosso SEO e marketing de conteúdo, o número de novos pacientes aumentou significativamente. Estamos muito satisfeitos com os resultados e a transparência no trabalho.",
       rating: 5
     },
     {
@@ -38,7 +38,7 @@ const Testimonials: React.FC = () => {
       position: "Proprietária",
       company: "Restaurante Sabor & Arte",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      quote: "A gestão de redes sociais realizada pela DigiMarketing aumentou nosso engajamento e trouxe novos clientes para o restaurante. O retorno sobre o investimento foi muito além do esperado.",
+      quote: "A gestão de redes sociais realizada pela GT Marketing aumentou nosso engajamento e trouxe novos clientes para o restaurante. O retorno sobre o investimento foi muito além do esperado.",
       rating: 4
     }
   ];
@@ -80,7 +80,7 @@ const Testimonials: React.FC = () => {
         </motion.div>
 
         <div className="max-w-4xl mx-auto mt-12">
-          <div className="bg-white rounded-xl shadow-xl p-8 text-gray-800">
+          <div className="bg-gtgreen rounded-xl shadow-xl p-8 text-gray-800">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="md:w-1/3 flex flex-col items-center">
                 <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
@@ -91,26 +91,26 @@ const Testimonials: React.FC = () => {
                   />
                 </div>
                 <h4 className="text-xl font-semibold text-center">{currentTestimonial.name}</h4>
-                <p className="text-gray-600 text-center text-sm">{currentTestimonial.position}</p>
-                <p className="text-primary-600 font-medium text-center text-sm">{currentTestimonial.company}</p>
+                <p className="text-dark-900 font-bold text-center text-sm">{currentTestimonial.position}</p>
+                <p className="text-black font-medium text-center text-sm">{currentTestimonial.company}</p>
                 
                 <div className="flex items-center mt-3">
                   {[...Array(5)].map((_, i) => (
                     <Star 
                       key={i} 
                       size={16} 
-                      className={i < currentTestimonial.rating ? "text-yellow-500 fill-current" : "text-gray-300"} 
+                      className={i < currentTestimonial.rating ? "text-yellow-300 fill-current " : "text-gray-600"} 
                     />
                   ))}
                 </div>
               </div>
               
               <div className="md:w-2/3">
-                <svg className="text-primary-200 w-12 h-12 mb-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <svg className="text-dark-900 w-12 h-12 mb-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
                 </svg>
                 
-                <p className="text-gray-700 italic text-lg leading-relaxed mb-6">
+                <p className="text-dark-900 italic text-lg leading-relaxed mb-6">
                   {currentTestimonial.quote}
                 </p>
               </div>
@@ -142,7 +142,7 @@ const Testimonials: React.FC = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  index === currentIndex ? 'bg-white scale-125' : 'bg-white/40 hover:bg-white/60'
+                  index === currentIndex ? 'bg-gtgreen scale-125' : 'bg-white/40 hover:bg-white/60'
                 }`}
                 aria-label={`Ir para depoimento ${index + 1}`}
               />

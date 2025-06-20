@@ -22,17 +22,17 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-white md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Transforme sua presença digital e <span className="text-dark-gtgreen">amplie seus resultados</span>
+              Transforme sua presença digital e <span className="text-gtgreen">amplie seus resultados</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-lg">
               Somos especialistas em estratégias digitais que convertem visitas em clientes e aumentam o reconhecimento da sua marca.
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Link to="/contato" className="bg-dark-gtgreen hover:bg-white text-black py-2 px-6 rounded transition-colors">
+              <Link to="/contato" className="bg-gtgreen hover:bg-green-500 text-black py-2 px-6 rounded transition-colors">
                 Fale com um especialista <ArrowRight size={18} className="ml-2" />
               </Link>
-              <Link to="/servicos" className="btn bg-white text-black hover:bg-dark-gtgreen">
+              <Link to="/servicos" className="btn bg-white text-black hover:bg-green-500">
                 Conheça nossos serviços
               </Link>
             </div>
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
                   <TrendingUp size={24} className="text-accent-400" />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold">300%</h4>
+                  <h4 className="text-2xl font-bold text-gtgreen">300%</h4>
                   <p className="text-gray-200 text-sm">Aumento médio em conversões</p>
                 </div>
               </motion.div>
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
                   <Target size={24} className="text-accent-400" />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold">98%</h4>
+                  <h4 className="text-2xl font-bold text-gtgreen">98%</h4>
                   <p className="text-gray-200 text-sm">Clientes satisfeitos</p>
                 </div>
               </motion.div>
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
                   <Award size={24} className="text-accent-400" />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold">50+</h4>
+                  <h4 className="text-2xl font-bold text-gtgreen">50+</h4>
                   <p className="text-gray-200 text-sm">Projetos premiados</p>
                 </div>
               </motion.div>

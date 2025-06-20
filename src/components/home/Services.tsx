@@ -14,23 +14,23 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, link, delay }) => {
   return (
     <motion.div 
-      className="card p-6 hover:translate-y-[-8px]"
+      className="card p-6 hover:translate-y-[-8px] bg-blue-700"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: delay * 0.1 }}
     >
-      <div className="bg-primary-50 w-16 h-16 rounded-lg flex items-center justify-center mb-5 text-primary-600">
+      <div className="bg-gtgreen w-16 h-16 rounded-lg flex items-center justify-center mb-5 text-dark">
         {icon}
       </div>
-      <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
+      <h3 className="text-xl text-white font-semibold mb-3">{title}</h3>
+      <p className="text-white mb-4">{description}</p>
       <Link 
         to={link} 
-        className="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center"
+        className="text-gtgreen hover:text-green-700 font-medium inline-flex items-center"
       >
         Saiba mais
-        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-4 h-4 ml-1 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
         </svg>
       </Link>
@@ -94,8 +94,8 @@ const Services: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="mb-4">Nossos Serviços</h2>
-          <p>Oferecemos soluções completas em marketing digital para ajudar sua empresa a crescer, conquistar clientes e aumentar vendas.</p>
+          <h2 className="mb-4 text-gtgreen">Nossos Serviços</h2>
+          <p className='text-white'>Oferecemos soluções completas em marketing digital para ajudar sua empresa a crescer, conquistar clientes e aumentar vendas.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">

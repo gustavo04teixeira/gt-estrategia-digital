@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="portfolio" className="section bg-gray-50">
+    <section id="portfolio" className="section bg-dark-700">
       <div className="container-custom">
         <motion.div 
           className="section-title"
@@ -60,8 +60,8 @@ const Portfolio: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="mb-4">Nosso Portfólio</h2>
-          <p>Conheça alguns dos projetos que desenvolvemos e os resultados que alcançamos para nossos clientes.</p>
+          <h2 className="mb-4 text-gtgreen">Nosso Portfólio</h2>
+          <p className='text-white'>Conheça alguns dos projetos que desenvolvemos e os resultados que alcançamos para nossos clientes.</p>
         </motion.div>*/
 
         {/* Filter */}
@@ -72,8 +72,8 @@ const Portfolio: React.FC = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-full transition-all ${
                 activeCategory === category 
-                  ? 'bg-primary-600 text-white' 
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                  ? 'bg-green-600 text-black' 
+                  : 'bg-gtgreen text-black hover:bg-green-500'
               }`}
             >
               {category}
@@ -86,7 +86,7 @@ const Portfolio: React.FC = () => {
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="card overflow-hidden group"
+              className="card overflow-hidden group bg-gray-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -100,19 +100,19 @@ const Portfolio: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <Link to={project.url} className="btn bg-white text-primary-600 hover:bg-gray-100">
+                  <Link to={project.url} className="btn bg-gtgreen text-black hover:bg-green-500">
                     Ver projeto
                   </Link>
                 </div>
               </div>
               <div className="p-6">
-                <span className="inline-block px-3 py-1 bg-primary-100 text-primary-600 rounded-full text-sm font-medium mb-3">
+                <span className="inline-block px-3 py-1 bg-dark-600 text-gtgreen rounded-full text-sm font-medium mb-3">
                   {project.category}
                 </span>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <Link 
                   to={project.url} 
-                  className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium mt-2"
+                  className="inline-flex items-center text-black hover:text-dark-500 font-medium mt-2"
                 >
                   Ver detalhes <ArrowRight size={16} className="ml-1" />
                 </Link>

@@ -13,7 +13,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="sobre" className="section bg-white">
+    <section id="sobre" className="section bg-dark-500">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
@@ -31,8 +31,8 @@ const About: React.FC = () => {
               className="rounded-lg shadow-lg relative z-10 w-full"
             />
             <div className="absolute -bottom-6 -right-6 bg-accent-500 text-white p-6 rounded-lg shadow-lg z-20">
-              <span className="block text-3xl font-bold">8+</span>
-              <span className="text-sm">Anos de experiência</span>
+              <span className="block text-3xl font-bold text-black">8+</span>
+              <span className="text-black">Anos de experiência</span>
             </div>
           </motion.div>
 

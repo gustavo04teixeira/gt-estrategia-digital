@@ -26,7 +26,7 @@ const Header: React.FC = () => {
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <div className="text-primary-800 font-heading font-bold text-2xl">
-            <span className="text-dark-gtgreen">GT </span>
+            <span className="text-gtgreen">GT </span>
             <span className="text-white">Estratégia Digital</span>
           </div>
         </Link>
@@ -35,37 +35,30 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <NavLink to="/servicos" className={({ isActive }) => 
             `text-sm font-medium transition-colors ${isActive 
-              ? 'text-green-900' 
-              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-white hover:text-dark-gtgreen'
+              ? 'text-gtgreen' 
+              : isScrolled ? 'text-white hover:text-gtgreen' : 'text-white hover:text-gtgreen'
             }`
           }>
             Serviços
           </NavLink>
           <NavLink to="/portfolio" className={({ isActive }) => 
             `text-sm font-medium transition-colors ${isActive 
-              ? 'text-primary-600' 
-              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-gray-100 hover:text-dark-gtgreen'
+              ? 'text-gtgreen' 
+              : isScrolled ? 'text-white hover:text-gtgreen' : 'text-gray-100 hover:text-gtgreen'
             }`
           }>
             Portfólio
           </NavLink>
-          <NavLink to="/blog" className={({ isActive }) => 
-            `text-sm font-medium transition-colors ${isActive 
-              ? 'text-primary-600' 
-              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-gray-100 hover:text-dark-gtgreen'
-            }`
-          }>
-            Blog
-          </NavLink>
+          
           <NavLink to="/sobre" className={({ isActive }) => 
             `text-sm font-medium transition-colors ${isActive 
-              ? 'text-primary-600' 
-              : isScrolled ? 'text-white hover:text-dark-gtgreen' : 'text-gray-100 hover:text-dark-gtgreen'
+              ? 'text-gtgreen' 
+              : isScrolled ? 'text-white hover:text-gtgreen' : 'text-gray-100 hover:text-gtgreen'
             }`
           }>
             Sobre
           </NavLink>
-          <Link to="/contato" className="btn-primary bg-dark-gtgreen text-black">
+          <Link to="/contato" className="btn-primary bg-gtgreen text-black">
             Fale Conosco <ArrowRight size={16} className="ml-2 text-black" />
           </Link>
         </nav>
@@ -77,9 +70,9 @@ const Header: React.FC = () => {
           aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
         >
           {isMenuOpen ? (
-            <X className={isScrolled ? 'text-gray-800' : 'text-white'} />
+            <X className={isScrolled ? 'text-gtgreen' : 'text-white'} />
           ) : (
-            <Menu className={isScrolled ? 'text-gray-800' : 'text-white'} />
+            <Menu className={isScrolled ? 'text-gtgreen' : 'text-white'} />
           )}
         </button>
       </div>
@@ -91,7 +84,7 @@ const Header: React.FC = () => {
             <NavLink 
               to="/" 
               className={({ isActive }) => 
-                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-primary-600' : 'hover:bg-gray-100'}`
+                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-gtgreen' : 'hover:bg-gray-100'}`
               }
               onClick={toggleMenu}
             >
@@ -100,7 +93,7 @@ const Header: React.FC = () => {
             <NavLink 
               to="/servicos" 
               className={({ isActive }) => 
-                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-primary-600' : 'hover:bg-gray-100'}`
+                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-gtgreen' : 'hover:bg-gray-100'}`
               }
               onClick={toggleMenu}
             >
@@ -109,25 +102,17 @@ const Header: React.FC = () => {
             <NavLink 
               to="/portfolio" 
               className={({ isActive }) => 
-                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-primary-600' : 'hover:bg-gray-100'}`
+                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-gtgreen' : 'hover:bg-gray-100'}`
               }
               onClick={toggleMenu}
             >
               Portfólio
             </NavLink>
-            <NavLink 
-              to="/blog" 
-              className={({ isActive }) => 
-                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-primary-600' : 'hover:bg-gray-100'}`
-              }
-              onClick={toggleMenu}
-            >
-              Blog
-            </NavLink>
+            
             <NavLink 
               to="/sobre" 
               className={({ isActive }) => 
-                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-primary-600' : 'hover:bg-gray-100'}`
+                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-gtgreen' : 'hover:bg-gray-100'}`
               }
               onClick={toggleMenu}
             >

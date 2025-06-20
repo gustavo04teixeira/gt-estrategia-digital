@@ -7,7 +7,8 @@ export default {
         // Cores básicas
         black: '#000000',
         white: '#FFFFFF',
-        
+        gtblack: '#000',  // Pode ser redundante com 'black'
+        gtgreen: '#7ED957',
         // Sua paleta dark (ótima estrutura)
         dark: {
           50: '#F5F5F6',
@@ -20,8 +21,7 @@ export default {
           700: '#17181A',
           800: '#0E0F10',
           900: '#050506',
-          gtblack: '#000',  // Pode ser redundante com 'black'
-          gtgreen: '#7ED957' // Melhor mover para cores de ação/sucesso
+           // Melhor mover para cores de ação/sucesso
         },
         
         // Cores semânticas (otimizadas)

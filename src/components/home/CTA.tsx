@@ -12,9 +12,9 @@ const CTA: React.FC = () => {
   ];
 
   return (
-    <section className="section bg-gray-50 py-20">
+    <section className="section bg-dark-700 py-20">
       <div className="container-custom">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-dark-500 rounded-2xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Content */}
             <motion.div 
@@ -24,13 +24,13 @@ const CTA: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <span className="inline-block px-4 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
+              <span className="inline-block px-4 py-1 bg-gtgreen text-black rounded-full text-sm font-medium mb-4">
                 Comece Agora
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl text-white font-bold mb-6">
                 Pronto para transformar sua presença digital?
               </h2>
-              <p className="text-gray-600 mb-8 text-lg">
+              <p className="text-gray-100 mb-8 text-lg">
                 Entre em contato hoje mesmo e descubra como podemos ajudar sua empresa a crescer no mundo digital.
               </p>
               
@@ -44,8 +44,8 @@ const CTA: React.FC = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                   >
-                    <CheckCircle size={20} className="text-secondary-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">{benefit}</span>
+                    <CheckCircle size={20} className="text-gtgreen mr-3 flex-shrink-0" />
+                    <span className="text-gray-200">{benefit}</span>
                   </motion.li>
                 ))}
               </ul>

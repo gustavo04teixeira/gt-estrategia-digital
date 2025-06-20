@@ -91,10 +91,10 @@ const ServicosPage: React.FC = () => {
 
   return (
     <>
-      <section className="pt-32 pb-16 bg-gradient-to-r from-primary-900 to-primary-700 text-white">
+      <section className="pt-32 pb-16 bg-dark-700 from-primary-900 to-primary-700 text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-dark-gtgreen">Nossos Serviços</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gtgreen">Nossos Serviços</h1>
             <p className="text-xl text-gray-100">
               Soluções completas em marketing digital para impulsionar seu negócio no ambiente online.
             </p>
@@ -102,7 +102,7 @@ const ServicosPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-dark-600">
         <div className="container-custom">
           {services.map((service, index) => (
             <motion.div 
@@ -122,8 +122,8 @@ const ServicosPage: React.FC = () => {
                 />
               </div>
               <div className="lg:w-1/2">
-                <h2 className="text-3xl font-bold mb-4 text-gray-900">{service.title}</h2>
-                <p className="text-gray-600 mb-6 text-lg">{service.description}</p>
+                <h2 className="text-3xl font-bold mb-4 text-gtgreen">{service.title}</h2>
+                <p className="text-white mb-6 text-lg">{service.description}</p>
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, idx) => (
                     <motion.li 
@@ -134,8 +134,8 @@ const ServicosPage: React.FC = () => {
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: idx * 0.1 }}
                     >
-                      <CheckCircle size={20} className="text-secondary-500 mt-1 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
+                      <CheckCircle size={20} className="text-green-400 mt-1 mr-3 flex-shrink-0" />
+                      <span className="text-white">{feature}</span>
                     </motion.li>
                   ))}
                 </ul>
@@ -158,7 +158,7 @@ const ServicosPage: React.FC = () => {
             <a href="/contato" className="btn-accent">
               Fale com um especialista
             </a>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-white">
+            <a href="https://wa.me/5548991398983" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-white">
               WhatsApp
             </a>
           </div>

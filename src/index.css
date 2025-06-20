@@ -46,15 +46,15 @@
   }
   
   .btn-primary {
-    @apply btn bg-primary-600 hover:bg-primary-700 text-white focus:ring-primary-500;
+    @apply btn bg-gtgreen hover:bg-green-700 text-black focus:ring-primary-500;
   }
   
   .btn-secondary {
-    @apply btn bg-secondary-600 hover:bg-secondary-700 text-white focus:ring-secondary-500;
+    @apply btn bg-gtgreen hover:bg-secondary-700 text-black focus:ring-secondary-500;
   }
   
   .btn-accent {
-    @apply btn bg-accent-600 hover:bg-accent-700 text-white focus:ring-accent-500;
+    @apply btn bg-gtgreen hover:bg-green-700 text-black focus:ring-accent-500;
   }
   
   .btn-outline {
@@ -74,14 +74,14 @@
   }
   
   .section-title h2 {
-    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+    @apply text-3xl md:text-4xl font-bold  mb-4;
   }
   
   .section-title p {
-    @apply text-lg text-gray-600 max-w-3xl mx-auto;
+    @apply text-lg  max-w-3xl mx-auto;
   }
 
   .whatsapp-button {
-    @apply fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110;
+    @apply fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-black p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110;
   }
 }
