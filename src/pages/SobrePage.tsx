@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react';
 
 const SobrePage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Sobre - DigiMarketing';
+    document.title = 'Sobre - GT';
     window.scrollTo(0, 0);
   }, []);
 
@@ -82,13 +82,13 @@ const SobrePage: React.FC = () => {
             {values.map((value, index) => (
               <motion.div
                 key={index}
-                className="bg-dark-400 p-6 rounded-lg shadow-md"
+                className="bg-dark-100 p-6 rounded-lg shadow-md"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <CheckCircle className="text-gtgreen mb-4" size={24} />
+                <CheckCircle className="text-green-500 mb-4" size={24} />
                 <p className="text-dark-900">{value}</p>
               </motion.div>
             ))}
@@ -103,7 +103,7 @@ const SobrePage: React.FC = () => {
             Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer no ambiente digital.
           </p>
           <a href="/contato" className="btn-accent">
-            Fale com nossa equipe
+            Fale com nossa equipe 
           </a>
         </div>
       </section>

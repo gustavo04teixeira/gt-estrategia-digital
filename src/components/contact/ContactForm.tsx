@@ -56,7 +56,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="section bg-gray-50">
+    <section className="section bg-gradient-to-r from-dark-600 to-dark-800">
       <div className="container-custom">
         <motion.div 
           className="section-title"
@@ -65,20 +65,20 @@ const ContactForm: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="mb-4">Entre em Contato</h2>
-          <p>Estamos prontos para responder suas dúvidas e ajudar a impulsionar seu negócio.</p>
+          <h2 className="mb-4 text-gtgreen">Entre em Contato</h2>
+          <p className='text-white'>Estamos prontos para responder suas dúvidas e ajudar a impulsionar seu negócio.</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 bg-white">
           {/* Contact Information */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-md p-8">
+            <div className=" rounded-lg shadow-md p-8">
               <h3 className="text-xl font-semibold mb-6">Informações de Contato</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-primary-100 p-3 rounded-full mr-4">
-                    <MapPin size={20} className="text-primary-600" />
+                  <div className="bg-black p-3 rounded-full mr-4">
+                    <MapPin size={20} className="text-gtgreen" />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Endereço</h4>
@@ -87,25 +87,25 @@ const ContactForm: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-primary-100 p-3 rounded-full mr-4">
-                    <Mail size={20} className="text-primary-600" />
+                  <div className="bg-black p-3 rounded-full mr-4">
+                    <Mail size={20} className="text-gtgreen" />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Email</h4>
-                    <a href="mailto:contato@digimarketing.com.br" className="text-primary-600 hover:text-primary-700 mt-1 block">
+                    <a href="mailto:contato@digimarketing.com.br" className="text-green-600 hover:text-green-900 mt-1 block">
                       gtestrategiadigital@gmail.com
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-primary-100 p-3 rounded-full mr-4">
-                    <Phone size={20} className="text-primary-600" />
+                  <div className="bg-black p-3 rounded-full mr-4">
+                    <Phone size={20} className="text-gtgreen" />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Telefone</h4>
-                    <a href="tel:+5548991740063" className="text-primary-600 hover:text-primary-700 mt-1 block">
-                      +55 48 99174-0063
+                    <a href="tel:+5548991740063" className="text-green-600 hover:text-green-900 mt-1 block">
+                      +55 48 99139 - 8983
                     </a>
                   </div>
                 </div>
@@ -113,8 +113,8 @@ const ContactForm: React.FC = () => {
               
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h4 className="font-medium text-gray-900 mb-4">Horário de Atendimento</h4>
-                <p className="text-gray-600">Segunda a Sexta: 09:00 - 18:00</p>
-                <p className="text-gray-600">Sábado: 09:00 - 13:00</p>
+                <p className="text-dark-600">Segunda a Sexta: 09:00 - 18:00</p>
+                <p className="text-dark-600">Sábado: 09:00 - 13:00</p>
               </div>
             </div>
           </div>

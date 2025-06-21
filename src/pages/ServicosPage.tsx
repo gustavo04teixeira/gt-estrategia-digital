@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const ServicosPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Serviços - DigiMarketing';
+    document.title = 'Serviços - GT';
     window.scrollTo(0, 0);
   }, []);
 
