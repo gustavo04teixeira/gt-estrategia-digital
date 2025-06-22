@@ -18,7 +18,7 @@ const SobrePage: React.FC = () => {
 
   return (
     <>
-      <section className="pt-32 pb-16 bg-gradient-to-r from-dark-500 to-dark-700 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-dark-500 to-dark-900 text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gtgreen">Nossa História</h1>
@@ -29,7 +29,7 @@ const SobrePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-dark-600 to-dark-800">
+      <section className="py-16 bg-gradient-to-r from-dark-900 to-green-900">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -69,7 +69,7 @@ const SobrePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-dark-600 to-dark-800">
+      <section className="py-16 bg-gradient-to-r from-dark-600 to-dark-900">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-gtgreen">Nossos Valores</h2>
@@ -96,7 +96,7 @@ const SobrePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-dark-600 to-dark-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-dark-900 to-green-900 text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold mb-8">Pronto para começar seu projeto?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">

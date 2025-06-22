@@ -60,7 +60,7 @@ const Testimonials: React.FC = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="section bg-gradient-to-r from-primary-800 to-primary-900 text-white relative overflow-hidden">
+    <section className="section bg-gradient-to-r from-dark-900 to-green-900 text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-white"></div>

@@ -69,29 +69,29 @@ const ContactForm: React.FC = () => {
           <p className='text-white'>Estamos prontos para responder suas dúvidas e ajudar a impulsionar seu negócio.</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 bg-white">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 bg-gradient-to-r from-dark-900 to-green-900">
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <div className=" rounded-lg shadow-md p-8">
-              <h3 className="text-xl font-semibold mb-6">Informações de Contato</h3>
+              <h3 className="text-xl font-semibold mb-6 text-gray-100">Informações de Contato</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-black p-3 rounded-full mr-4">
+                  <div className="bg-dark-900 p-3 border border-white rounded-full mr-4">
                     <MapPin size={20} className="text-gtgreen" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Endereço</h4>
-                    <p className="text-gray-600 mt-1">Florianópolis - SC, Brasil</p>
+                    <h4 className="font-medium text-gray-100">Endereço</h4>
+                    <p className="text-gray-300 mt-1">Florianópolis - SC, Brasil</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-black p-3 rounded-full mr-4">
+                  <div className="bg-dark-900 p-3 border border-white rounded-full mr-4">
                     <Mail size={20} className="text-gtgreen" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Email</h4>
+                    <h4 className="font-medium text-gray-100">Email</h4>
                     <a href="mailto:contato@digimarketing.com.br" className="text-green-600 hover:text-green-900 mt-1 block">
                       gtestrategiadigital@gmail.com
                     </a>
@@ -99,11 +99,11 @@ const ContactForm: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-black p-3 rounded-full mr-4">
+                  <div className="bg-dark-900 p-3 border border-white rounded-full mr-4">
                     <Phone size={20} className="text-gtgreen" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Telefone</h4>
+                    <h4 className="font-medium text-gray-100">Telefone</h4>
                     <a href="tel:+5548991740063" className="text-green-600 hover:text-green-900 mt-1 block">
                       +55 48 99139 - 8983
                     </a>
@@ -112,16 +112,16 @@ const ContactForm: React.FC = () => {
               </div>
               
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <h4 className="font-medium text-gray-900 mb-4">Horário de Atendimento</h4>
-                <p className="text-dark-600">Segunda a Sexta: 09:00 - 18:00</p>
-                <p className="text-dark-600">Sábado: 09:00 - 13:00</p>
+                <h4 className="font-medium text-gray-100 mb-4">Horário de Atendimento</h4>
+                <p className="text-dark-200">Segunda a Sexta: 09:00 - 18:00</p>
+                <p className="text-dark-200">Sábado: 09:00 - 13:00</p>
               </div>
             </div>
           </div>
           
           {/* Form */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg shadow-md p-8">
+            <div className="bg-gradient-to-r from-dark-900 to-green-900 rounded-lg shadow-md p-8">
               {success ? (
                 <motion.div 
                   className="flex flex-col items-center justify-center text-center h-full py-12"
@@ -147,7 +147,7 @@ const ContactForm: React.FC = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-1">
                         Nome Completo*
                       </label>
                       <input
@@ -157,13 +157,13 @@ const ContactForm: React.FC = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                        Email*
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-1">
+                        Email* 
                       </label>
                       <input
                         type="email"
@@ -172,14 +172,14 @@ const ContactForm: React.FC = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       />
                     </div>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-200 mb-1">
                         Telefone
                       </label>
                       <input
@@ -188,12 +188,12 @@ const ContactForm: React.FC = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="service" className="block text-sm font-medium text-gray-200 mb-1">
                         Serviço de Interesse
                       </label>
                       <select
@@ -201,7 +201,7 @@ const ContactForm: React.FC = () => {
                         name="service"
                         value={formData.service}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       >
                         <option value="">Selecione um serviço</option>
                         <option value="SEO">SEO</option>
@@ -216,7 +216,7 @@ const ContactForm: React.FC = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-200 mb-1">
                       Mensagem*
                     </label>
                     <textarea
@@ -226,7 +226,7 @@ const ContactForm: React.FC = () => {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                     ></textarea>
                   </div>
                   

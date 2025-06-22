@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-gradient-to-r from-dark-900 to-dark-700 shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <div className="text-primary-800 font-heading font-bold text-2xl">

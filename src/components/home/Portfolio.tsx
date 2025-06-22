@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="portfolio" className="section bg-dark-700">
+    <section id="portfolio" className="section bg-gradient-to-r from-dark-600 to-dark-900">
       <div className="container-custom">
         <motion.div 
           className="section-title"

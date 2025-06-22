@@ -14,7 +14,7 @@ const CTA: React.FC = () => {
   return (
     <section className="section bg-dark-700 py-20">
       <div className="container-custom">
-        <div className="bg-dark-500 rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-gradient-to-r from-dark-600 to-dark-900 rounded-2xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Content */}
             <motion.div 
@@ -54,7 +54,7 @@ const CTA: React.FC = () => {
                 <Link to="/contato" className="btn-primary">
                   Fale com um especialista <ArrowRight size={18} className="ml-2" />
                 </Link>
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-white">
+                <a href="https://wa.me/5511991398983" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-black">
                   WhatsApp
                 </a>
               </div>

@@ -13,7 +13,7 @@ const ServicosPage: React.FC = () => {
       id: 'seo',
       title: 'SEO',
       description: 'Aumente sua visibilidade nos mecanismos de busca e atraia mais tráfego qualificado para o seu site.',
-      image: 'https://images.pexels.com/photos/5766242/pexels-photo-5766242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      image: 'https://images.pexels.com/photos/7119258/pexels-photo-7119258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       features: [
         'Análise de palavras-chave e concorrentes',
         'Otimização on-page e técnica',
@@ -26,7 +26,7 @@ const ServicosPage: React.FC = () => {
       id: 'midia-paga',
       title: 'Mídia Paga',
       description: 'Campanhas estratégicas de anúncios online para aumentar sua visibilidade e conversões rapidamente.',
-      image: 'https://images.pexels.com/photos/5833891/pexels-photo-5833891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      image: 'https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       features: [
         'Campanhas no Google Ads e Redes de Display',
         'Anúncios no Facebook, Instagram e LinkedIn',
@@ -39,7 +39,7 @@ const ServicosPage: React.FC = () => {
       id: 'redes-sociais',
       title: 'Gestão de Redes Sociais',
       description: 'Gerenciamento profissional das suas redes sociais para engajar seu público e fortalecer sua marca.',
-      image: 'https://images.pexels.com/photos/3638886/pexels-photo-3638886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       features: [
         'Planejamento de conteúdo estratégico',
         'Design de posts e materiais visuais',
@@ -52,7 +52,7 @@ const ServicosPage: React.FC = () => {
       id: 'marketing-conteudo',
       title: 'Marketing de Conteúdo',
       description: 'Crie conteúdo relevante que atrai, engaja e converte seu público em clientes fiéis.',
-      image: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      image: 'https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       features: [
         'Estratégia de conteúdo personalizada',
         'Produção de artigos, e-books e infográficos',
@@ -65,7 +65,7 @@ const ServicosPage: React.FC = () => {
       id: 'email-marketing',
       title: 'Email Marketing',
       description: 'Comunique-se diretamente com seus clientes e leads através de campanhas de email estratégicas.',
-      image: 'https://images.pexels.com/photos/4064226/pexels-photo-4064226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      image: 'https://images.pexels.com/photos/7075408/pexels-photo-7075408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       features: [
         'Segmentação avançada de lista',
         'Criação de templates personalizados',
@@ -78,7 +78,7 @@ const ServicosPage: React.FC = () => {
       id: 'desenvolvimento-web',
       title: 'Desenvolvimento Web',
       description: 'Sites modernos, responsivos e otimizados para conversão que impressionam seus visitantes.',
-      image: 'https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       features: [
         'Design UX/UI intuitivo e moderno',
         'Desenvolvimento responsivo',
@@ -91,7 +91,7 @@ const ServicosPage: React.FC = () => {
 
   return (
     <>
-      <section className="pt-32 pb-16 bg-dark-700 from-primary-900 to-primary-700 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-dark-900 to-green-900 text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gtgreen">Nossos Serviços</h1>
@@ -102,7 +102,7 @@ const ServicosPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-dark-600">
+      <section className="py-16 bg-gradient-to-r from-dark-900 to-green-900">
         <div className="container-custom">
           {services.map((service, index) => (
             <motion.div 
@@ -148,9 +148,9 @@ const ServicosPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-primary-800 to-primary-900 text-white">
+      <section className="py-16 bg-gradient-to-r from-dark-500 to-dark-900 text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Pronto para transformar seu negócio digital?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gtgreen">Pronto para transformar seu negócio digital?</h2>
           <p className="text-xl text-gray-100 mb-10 max-w-3xl mx-auto">
             Entre em contato hoje mesmo e descubra como podemos ajudar a alavancar sua presença online.
           </p>
@@ -158,7 +158,7 @@ const ServicosPage: React.FC = () => {
             <a href="/contato" className="btn-accent">
               Fale com um especialista
             </a>
-            <a href="https://wa.me/5548991398983" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-white">
+            <a href="https://wa.me/5548991398983" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-black">
               WhatsApp
             </a>
           </div>

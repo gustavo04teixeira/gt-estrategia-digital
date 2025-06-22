@@ -13,7 +13,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="sobre" className="section bg-dark-500">
+    <section id="sobre" className="section bg-gradient-to-r from-dark-900 to-green-900">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
@@ -43,19 +43,19 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Sobre a GT Estratégia digital</h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <h2 className="text-3xl md:text-4xl text-gtgreen font-bold mb-6">Sobre a GT Estratégia digital</h2>
+            <p className="text-gray-100 mb-6 leading-relaxed">
               Somos uma agência de marketing digital focada em resultados. Há mais de 8 anos no mercado, 
               ajudamos empresas de diversos segmentos a aumentar sua presença online, atrair mais clientes 
               e impulsionar suas vendas através de estratégias digitais eficientes e personalizadas.
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="text-gray-100 mb-6 leading-relaxed">
               Nossa equipe é composta por profissionais especializados nas diversas áreas do marketing digital, 
               que trabalham de forma integrada para oferecer soluções completas e gerar resultados concretos para nossos clientes.
             </p>
             
             <div className="mb-8">
-              <h3 className="text-xl font-semibold mb-4">Por que escolher a GT Estratégia digital?</h3>
+              <h3 className="text-xl text-gtgreen font-semibold mb-4">Por que escolher a GT Estratégia digital?</h3>
               <ul className="space-y-3">
                 {benefits.map((benefit, index) => (
                   <motion.li 
@@ -66,8 +66,8 @@ const About: React.FC = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    <CheckCircle size={20} className="text-secondary-500 mt-1 mr-3 flex-shrink-0" />
-                    <span className="text-gray-700">{benefit}</span>
+                    <CheckCircle size={20} className="text-gtgreen mt-1 mr-3 flex-shrink-0" />
+                    <span className="text-gray-100">{benefit}</span>
                   </motion.li>
                 ))}
               </ul>
