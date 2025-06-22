@@ -80,7 +80,7 @@ const RedesRestaurante: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-dark-700/50 p-6 rounded-xl border border-dark-600 hover:border-gtgreen/30 transition-all"
+                className="bg-dark-700/50 p-6 rounded-xl border border-gray-400 hover:border-gtgreen/30 transition-all"
               >
                 <div className="text-gtgreen mb-4">
                   {item.icon}
@@ -181,7 +181,7 @@ const RedesRestaurante: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="bg-dark-700/50 p-8 rounded-xl border border-dark-600 hover:border-gtgreen/50 transition-all group"
+                className="bg-dark-700/50 p-8 rounded-xl border border-gray-400 hover:border-gtgreen/50 transition-all group"
               >
                 <div className="text-gtgreen mb-4 text-2xl">
                   <ChevronRight className="group-hover:translate-x-2 transition-transform" />
