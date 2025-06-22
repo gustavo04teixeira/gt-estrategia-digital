@@ -23,16 +23,13 @@ const Footer: React.FC = () => {
               Transformamos sua presença digital com estratégias inovadoras e eficientes para alavancar seus resultados.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-gtgreen transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61570651524714" target="_blank" rel="noopener noreferrer" className="hover:text-gtgreen transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-gtgreen transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/gt.estrategiadigital/" target="_blank" rel="noopener noreferrer" className="hover:text-gtgreen transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gtgreen transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gtgreen transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/gustavo-adolfo-teixeira-5a15311b2/" target="_blank" rel="noopener noreferrer" className="hover:text-gtgreen transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -74,16 +71,13 @@ const Footer: React.FC = () => {
                 <Link to="/portfolio" className="hover:text-gtgreen transition-colors">Portfólio</Link>
               </li>
               <li>
-                <Link to="/blog" className="hover:text-gtgreen transition-colors">Blog</Link>
-              </li>
-              <li>
                 <Link to="/sobre" className="hover:text-gtgreen transition-colors">Sobre Nós</Link>
               </li>
               <li>
                 <Link to="/contato" className="hover:text-gtgreen transition-colors">Contato</Link>
               </li>
               <li>
-                <Link to="/politica-privacidade" className="hover:text-gtgreen transition-colors">Política de Privacidade</Link>
+                <Link to="/politica-de-privacidade" className="hover:text-gtgreen transition-colors">Política de Privacidade</Link>
               </li>
             </ul>
           </div>
@@ -98,7 +92,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-gtgreen" />
-                <a href="mailto:contato@digimarketing.com.br" className="hover:text-gtgreen transition-colors">gtestrategiadigital@gmail.com</a>
+                <a href="gtestrategiadigital@gmail.com" className="hover:text-gtgreen transition-colors">gtestrategiadigital@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -110,8 +104,8 @@ const Footer: React.FC = () => {
         <div className="container-custom flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {currentYear} GT Estratégia Digital. Todos os direitos reservados.</p>
           <div className="mt-4 md:mt-0">
-            <Link to="/termos" className="text-sm hover:text-gtgreen transition-colors mr-6">Termos de Uso</Link>
-            <Link to="/politica-privacidade" className="text-sm hover:text-gtgreen transition-colors">Política de Privacidade</Link>
+            <Link to="termos-de-uso" className="text-sm hover:text-gtgreen transition-colors mr-6">Termos de Uso</Link>
+            <Link to="politica-de-privacidade" className="text-sm hover:text-gtgreen transition-colors">Política de Privacidade</Link>
           </div>
         </div>
       </div>

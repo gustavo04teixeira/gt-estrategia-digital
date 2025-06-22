@@ -157,7 +157,7 @@ const ContactForm: React.FC = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 text-black bg-gray-300 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       />
                     </div>
                     
@@ -172,7 +172,7 @@ const ContactForm: React.FC = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 text-black bg-gray-300 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       />
                     </div>
                   </div>
@@ -188,7 +188,7 @@ const ContactForm: React.FC = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 text-black bg-gray-300 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       />
                     </div>
                     
@@ -201,7 +201,7 @@ const ContactForm: React.FC = () => {
                         name="service"
                         value={formData.service}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                        className="w-full px-4 py-2 text-black bg-gray-300 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       >
                         <option value="">Selecione um serviço</option>
                         <option value="SEO">SEO</option>
@@ -226,7 +226,7 @@ const ContactForm: React.FC = () => {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-2 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                      className="w-full px-4 text-black py-2 bg-gray-300 border border-dark-900 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                     ></textarea>
                   </div>
                   
