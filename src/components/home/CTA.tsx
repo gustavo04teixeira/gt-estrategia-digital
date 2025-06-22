@@ -54,7 +54,7 @@ const CTA: React.FC = () => {
                 <Link to="/contato" className="btn-primary">
                   Fale com um especialista <ArrowRight size={18} className="ml-2" />
                 </Link>
-                <a href="https://wa.me/5511991398983" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-black">
+                <a href="https://wa.me/5548991398983" target="_blank" rel="noopener noreferrer" className="btn bg-green-500 hover:bg-green-600 text-black">
                   WhatsApp
                 </a>
               </div>
