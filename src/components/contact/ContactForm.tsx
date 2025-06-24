@@ -132,8 +132,8 @@ const ContactForm: React.FC = () => {
                   <div className="bg-green-100 p-3 rounded-full mb-6">
                     <CheckCircle size={48} className="text-green-600" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Mensagem Enviada!</h3>
-                  <p className="text-gray-600 max-w-md mb-8">
+                  <h3 className="text-2xl font-semibold text-gray-200 mb-4">Mensagem Enviada!</h3>
+                  <p className="text-gray-200 max-w-md mb-8">
                     Obrigado por entrar em contato conosco. Nossa equipe responderá sua mensagem em breve.
                   </p>
                   <button
