@@ -1,6 +1,7 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { MessageCircle } from 'lucide-react';
+import { pageview } from './gtag';
 
 // Layouts
 import MainLayout from './layouts/MainLayout';
@@ -19,6 +20,12 @@ import SeoClinica from './pages/portfolio/SeoClinica';
 import RedesRestaurante from './pages/portfolio/RedesRestaurante';
 
 const App: React.FC = () => {
+  const location = useLocation(); // 👈 necessário para detectar mudança de rota
+
+  useEffect(() => {
+    pageview(location.pathname + location.search); // 👈 dispara o pageview
+  }, [location]);
+
   return (
     <>
       <Routes>
@@ -36,7 +43,7 @@ const App: React.FC = () => {
           <Route path="portfolio/redes-sociais-restaurante" element={<RedesRestaurante />} />
         </Route>
       </Routes>
-      
+
       <a 
         href="https://wa.me/5548991398983?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20marketing%20digital." 
         target="_blank" 
