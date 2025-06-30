@@ -18,6 +18,10 @@ import SiteAdvocacia from './pages/portfolio/SiteAdvocacia';
 import EcommerceModa from './pages/portfolio/EcommerceModa';
 import SeoClinica from './pages/portfolio/SeoClinica';
 import RedesRestaurante from './pages/portfolio/RedesRestaurante';
+import BlogPage from './pages/BlogPage';
+import Seo2025 from './pages/blog/Seo2025'; 
+import MarketingDigitalClientes from "./pages/blog/MarketingDigitalClientes";
+
 
 const App: React.FC = () => {
   const location = useLocation(); // 👈 necessário para detectar mudança de rota
@@ -41,6 +45,10 @@ const App: React.FC = () => {
           <Route path="portfolio/campanha-ecommerce-moda" element={<EcommerceModa />} />
           <Route path="portfolio/seo-clinica-medica" element={<SeoClinica />} />
           <Route path="portfolio/redes-sociais-restaurante" element={<RedesRestaurante />} />
+          <Route path="blog" element={<BlogPage />} />
+
+          <Route path="blog/seo2025" element={<Seo2025 />} />
+          <Route path="blog/marketing-digital-clientes" element={<MarketingDigitalClientes />} />
         </Route>
       </Routes>
 

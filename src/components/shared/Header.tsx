@@ -58,6 +58,14 @@ const Header: React.FC = () => {
           }>
             Sobre
           </NavLink>
+             <NavLink to="/Blog" className={({ isActive }) => 
+            `text-sm font-medium transition-colors ${isActive 
+              ? 'text-gtgreen' 
+              : isScrolled ? 'text-white hover:text-gtgreen' : 'text-gray-100 hover:text-gtgreen'
+            }`
+          }>
+            Blog
+          </NavLink>
           <Link to="/contato" className="btn-primary bg-gtgreen text-black">
             Fale Conosco <ArrowRight size={16} className="ml-2 text-black" />
           </Link>
@@ -76,6 +84,7 @@ const Header: React.FC = () => {
           )}
         </button>
       </div>
+      
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
@@ -117,6 +126,15 @@ const Header: React.FC = () => {
               onClick={toggleMenu}
             >
               Sobre
+            </NavLink>
+              <NavLink 
+              to="/Blog" 
+              className={({ isActive }) => 
+                `py-2 px-4 text-gray-800 rounded-md ${isActive ? 'bg-primary-50 text-gtgreen' : 'hover:bg-gray-100'}`
+              }
+              onClick={toggleMenu}
+            >
+              Blog
             </NavLink>
             <Link 
               to="/contato" 

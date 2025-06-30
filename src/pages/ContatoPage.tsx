@@ -4,7 +4,7 @@ import ContactForm from '../components/contact/ContactForm';
 const ContatoPage: React.FC = () => {
   useEffect(() => {
     // Update document title
-    document.title = 'Contato - DigiMarketing';
+    document.title = 'Contato - GT';
     
     // Scroll to top on page load
     window.scrollTo(0, 0);

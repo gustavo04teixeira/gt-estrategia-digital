@@ -4,7 +4,7 @@ import { CheckCircle, Award, Users, BarChart2, Globe, Shield, Rocket, HeartHands
 
 const SobrePage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Sobre - GT Estratégia Digital';
+    document.title = 'Sobre - GT';
     window.scrollTo(0, 0);
   }, []);
 

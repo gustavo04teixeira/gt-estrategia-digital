@@ -74,11 +74,15 @@ const Footer: React.FC = () => {
                 <Link to="/sobre" className="hover:text-gtgreen transition-colors">Sobre Nós</Link>
               </li>
               <li>
+                <Link to="/blog" className="hover:text-gtgreen transition-colors">Blog</Link>
+              </li>
+              <li>
                 <Link to="/contato" className="hover:text-gtgreen transition-colors">Contato</Link>
               </li>
               <li>
                 <Link to="/politica-de-privacidade" className="hover:text-gtgreen transition-colors">Política de Privacidade</Link>
               </li>
+              
             </ul>
           </div>
 
